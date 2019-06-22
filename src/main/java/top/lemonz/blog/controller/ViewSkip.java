@@ -7,6 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import top.lemonz.blog.dao.SysUserDao;
+import top.lemonz.blog.pojo.SysUser;
 import top.lemonz.blog.tool.IXlmToolKit;
 
 import java.util.HashMap;
@@ -31,6 +33,12 @@ public class ViewSkip {
      */
     @Autowired
     private IXlmToolKit kit;
+
+    /**
+     * 用户
+     */
+    @Autowired
+    private SysUserDao sud;
 
     /**
      * 日志
@@ -71,6 +79,7 @@ public class ViewSkip {
         modelMap.addAttribute("username", "小");
         modelMap.addAttribute("time", kit.ftime(System.currentTimeMillis()));
         LOG.info(modelMap.get("username") + " - " + modelMap.get("time"));
+        LOG.info(kit.parseJackson(sud.queryAll(new SysUser())));
     }
 
 }

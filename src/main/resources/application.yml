@@ -1,14 +1,21 @@
-# 配置项目路径，端口号
+# 开发环境配置
 server:
-  #servlet:
-  # 项目路径
-  #context-path: /springboot
-  # 端口号
+  # 服务器的HTTP端口，默认为80
   port: 80
+  servlet:
+  # 应用的访问路径
+   context-path: /
+  tomcat:
+    # tomcat的URI编码
+    uri-encoding: UTF-8
+    # tomcat最大线程数，默认为200
+    max-threads: 800
+    # Tomcat启动初始化的线程数，默认值25
+    min-spare-threads: 30
 
 # Spring的配置
 spring:
-  # 模板配置
+  # 模板引擎配置
   profiles: default
   freemarker:
     template-loader-path: classpath:/templates/views/ftl/
@@ -21,20 +28,22 @@ spring:
     suffix: .ftl
   # 配置mybatis
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/cloudclass?useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ry?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
     username: root
-    password: 123456
-  dbcp2:
-    # 最小连接数
-    min-idle: 5
-    # 最大连接数
-    max-idle: 30
-    # 初始化连接
-    initial-size: 10
-    # 最大空闲时间
-    max-wait-millis: 300
-#  # 配置redis
+    password: root
+    dbcp2:
+      # 配置检测连接是否有效
+      validation-query: SELECT 1 FROM DUAL
+      # 最小连接数
+      min-idle: 5
+      # 最大连接数
+      max-idle: 30
+      # 初始化连接
+      initial-size: 5
+      # 最大空闲时间
+      max-wait-millis: 300
+  # 配置redis
   redis:
     # Redis数据库索引（默认为0）
     database: 0
@@ -54,11 +63,14 @@ spring:
         max-idle: 8
         # 连接池中的最小空闲连接
         min-idle: 0
-        # 连接超时时间（毫秒）
+    # 连接超时时间（毫秒）
     timeout: 60ms
 
 # mybatis的配置
 mybatis:
+  # 搜索指定包别名
+  type-aliases-package:
+  # 其他配置
   configuration:
     #使全局的映射器启用或禁用缓存。
     cache-enabled: true
