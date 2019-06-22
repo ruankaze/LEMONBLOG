@@ -99,5 +99,5 @@ mybatis:
 
 # logback的配置
 logging:
-  // logback - XML文件
+  # logback - XML文件
   config: classpath:logback-spring.xml
