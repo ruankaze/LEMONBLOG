@@ -69,7 +69,7 @@ spring:
 # mybatis的配置
 mybatis:
   # 搜索指定包别名
-  type-aliases-package:
+  type-aliases-package: top.lemonz.blog.dao
   # 其他配置
   configuration:
     #使全局的映射器启用或禁用缓存。
@@ -99,4 +99,5 @@ mybatis:
 
 # logback的配置
 logging:
+  // logback - XML文件
   config: classpath:logback-spring.xml
