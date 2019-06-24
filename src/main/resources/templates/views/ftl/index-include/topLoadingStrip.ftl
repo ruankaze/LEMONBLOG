@@ -15,19 +15,26 @@
         background: #00AEFB; /*进度条颜色*/
         height: 1px;
     }
+
     .pace .pace-progress-inner {
-        box-shadow: 0 0 10px #00AEFB, 0 0 5px     #00AEFB; /*阴影颜色*/
+        box-shadow: 0 0 10px #00AEFB, 0 0 5px #00AEFB; /*阴影颜色*/
     }
+
     .pace .pace-activity {
-        border-top-color: #00AEFB;    /*上边框颜色*/
-        border-left-color: #00AEFB;    /*左边框颜色*/
+        border-top-color: #00AEFB; /*上边框颜色*/
+        border-left-color: #00AEFB; /*左边框颜色*/
     }
+
+    /*
     @media (min-width: 1200px) {
         .container {
             width: 85%;
         }
     }
-    /** {*/
-    /*    cursor: url('/images/nz.jpg'), default!important;*/
-    /*}*/
+
+    {
+        cursor: url('/images/nz.jpg'), default !important !*鼠标指针样式*!
+    }
+    */
+
 </style>
