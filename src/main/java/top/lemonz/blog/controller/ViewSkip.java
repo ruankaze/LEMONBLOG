@@ -61,6 +61,16 @@ public class ViewSkip {
     }
 
     /**
+     * articles 文章
+     */
+    static {
+
+        // mask
+        vsmap.put("mask", "articles/mask");
+
+    }
+
+    /**
      * 视图跳转 - Rest 风格
      * @param view,modelMap
      * @return
@@ -79,7 +89,7 @@ public class ViewSkip {
         modelMap.addAttribute("username", "小");
         modelMap.addAttribute("time", kit.ftime(System.currentTimeMillis()));
         LOG.info(modelMap.get("username") + " - " + modelMap.get("time"));
-        LOG.info(kit.parseJackson(sud.queryAll(new SysUser())));
+        LOG.info(kit.parseJackson(sud.queryAll(new SysUser()).get(0).getUserName()));
     }
 
 }
