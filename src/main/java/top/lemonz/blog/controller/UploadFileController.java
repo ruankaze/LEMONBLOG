@@ -25,7 +25,7 @@ import java.util.Calendar;
  */
 @Controller
 @RequestMapping("file")
-public class FileController {
+public class UploadFileController {
 
     /**
      * 保存路径
@@ -42,7 +42,7 @@ public class FileController {
     /**
      * 日志
      */
-    private final static Logger logger = LoggerFactory.getLogger(FileController.class);
+    private final static Logger logger = LoggerFactory.getLogger(UploadFileController.class);
 
     @RequestMapping("fileUpload")
     @ResponseBody
