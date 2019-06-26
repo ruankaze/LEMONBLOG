@@ -55,6 +55,12 @@ public class ViewSkip {
      */
     static {
 
+        // 首页
+        vsmap.put("index", "index");
+
+        // editormd 编辑器
+        vsmap.put("simple", "simple");
+
         // 测试视图页
         vsmap.put("test", "test");
 
