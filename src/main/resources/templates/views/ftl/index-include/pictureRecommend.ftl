@@ -33,7 +33,7 @@
                     <div class="col-sm-6 col-md-3 isotope-item web-design" style="position: absolute; left: 0px; top: 0px;">
                         <div class="image-box">
                             <div class="overlay-container">
-                                <img src="images/portfolio-1.jpg" alt="">
+                                <img src="/images/portfolio-1.jpg" alt="">
                                 <a class="overlay" data-toggle="modal" data-target="#project-1">
                                     <i class="fa fa-search-plus"></i>
 
@@ -49,7 +49,7 @@
                     <div class="col-sm-6 col-md-3 isotope-item app-development" style="position: absolute; left: 375px; top: 0px;">
                         <div class="image-box">
                             <div class="overlay-container">
-                                <img src="images/portfolio-2.jpg" alt="">
+                                <img src="/images/portfolio-2.jpg" alt="">
                                 <a class="overlay" data-toggle="modal" data-target="#project-2">
                                     <i class="fa fa-search-plus"></i>
 
@@ -65,7 +65,7 @@
                     <div class="col-sm-6 col-md-3 isotope-item web-design" style="position: absolute; left: 0px; top: 250px;">
                         <div class="image-box">
                             <div class="overlay-container">
-                                <img src="images/portfolio-3.jpg" alt="">
+                                <img src="/images/portfolio-3.jpg" alt="">
                                 <a class="overlay" data-toggle="modal" data-target="#project-3">
                                     <i class="fa fa-search-plus"></i>
                                 </a>
@@ -80,7 +80,7 @@
                     <div class="col-sm-6 col-md-3 isotope-item mobile-apps" style="position: absolute; left: 375px; top: 250px;">
                         <div class="image-box">
                             <div class="overlay-container">
-                                <img src="images/portfolio-4.jpg" alt="">
+                                <img src="/images/portfolio-4.jpg" alt="">
                                 <a class="overlay" data-toggle="modal" data-target="#project-4">
                                     <i class="fa fa-search-plus"></i>
                                 </a>
@@ -95,7 +95,7 @@
                     <div class="col-sm-6 col-md-3 isotope-item app-development" style="position: absolute; left: 0px; top: 500px;">
                         <div class="image-box">
                             <div class="overlay-container">
-                                <img src="images/portfolio-5.jpg" alt="">
+                                <img src="/images/portfolio-5.jpg" alt="">
                                 <a class="overlay" data-toggle="modal" data-target="#project-5">
                                     <i class="fa fa-search-plus"></i>
                                 </a>
@@ -110,7 +110,7 @@
                     <div class="col-sm-6 col-md-3 isotope-item web-design" style="position: absolute; left: 375px; top: 500px;">
                         <div class="image-box">
                             <div class="overlay-container">
-                                <img src="images/portfolio-6.jpg" alt="">
+                                <img src="/images/portfolio-6.jpg" alt="">
                                 <a class="overlay" data-toggle="modal" data-target="#project-6">
                                     <i class="fa fa-search-plus"></i>
                                 </a>
@@ -125,7 +125,7 @@
                     <div class="col-sm-6 col-md-3 isotope-item mobile-apps" style="position: absolute; left: 0px; top: 750px;">
                         <div class="image-box">
                             <div class="overlay-container">
-                                <img src="images/portfolio-7.jpg" alt="">
+                                <img src="/images/portfolio-7.jpg" alt="">
                                 <a class="overlay" data-toggle="modal" data-target="#project-7">
                                     <i class="fa fa-search-plus"></i>
                                     <span>Site Building</span>
@@ -141,7 +141,7 @@
                     <div class="col-sm-6 col-md-3 isotope-item web-design" style="position: absolute; left: 375px; top: 750px;">
                         <div class="image-box">
                             <div class="overlay-container">
-                                <img src="images/portfolio-8.jpg" alt="">
+                                <img src="/images/portfolio-8.jpg" alt="">
                                 <a class="overlay" data-toggle="modal" data-target="#project-8">
                                     <i class="fa fa-search-plus"></i>
                                 </a>
@@ -156,7 +156,7 @@
                     <div class="col-sm-6 col-md-3 isotope-item web-design" style="position: absolute; left: 0px; top: 1000px;">
                         <div class="image-box">
                             <div class="overlay-container">
-                                <img src="images/portfolio-9.jpg" alt="">
+                                <img src="/images/portfolio-9.jpg" alt="">
                                 <a class="overlay" data-toggle="modal" data-target="#project-9">
                                     <i class="fa fa-search-plus"></i>
                                 </a>
@@ -171,7 +171,7 @@
                     <div class="col-sm-6 col-md-3 isotope-item mobile-apps" style="position: absolute; left: 375px; top: 1000px;">
                         <div class="image-box">
                             <div class="overlay-container">
-                                <img src="images/portfolio-10.jpg" alt="">
+                                <img src="/images/portfolio-10.jpg" alt="">
                                 <a class="overlay" data-toggle="modal" data-target="#project-10">
                                     <i class="fa fa-search-plus"></i>
                                 </a>
@@ -186,7 +186,7 @@
                     <div class="col-sm-6 col-md-3 isotope-item web-design" style="position: absolute; left: 0px; top: 1250px;">
                         <div class="image-box">
                             <div class="overlay-container">
-                                <img src="images/portfolio-11.jpg" alt="">
+                                <img src="/images/portfolio-11.jpg" alt="">
                                 <a class="overlay" data-toggle="modal" data-target="#project-11">
                                     <i class="fa fa-search-plus"></i>
                                 </a>
@@ -201,7 +201,7 @@
                     <div class="col-sm-6 col-md-3 isotope-item app-development" style="position: absolute; left: 375px; top: 1250px;">
                         <div class="image-box">
                             <div class="overlay-container">
-                                <img src="images/portfolio-12.jpg" alt="">
+                                <img src="/images/portfolio-12.jpg" alt="">
                                 <a class="overlay" data-toggle="modal" data-target="#project-12">
                                     <i class="fa fa-search-plus"></i>
                                 </a>
@@ -235,7 +235,7 @@
 
                     <div class="row">
                         <div class="col-md-12">
-                            <img src="images/portfolio-${i}.jpg" alt="">
+                            <img src="/images/portfolio-${i}.jpg" alt="">
                             <br/>
                             <h3>Project Description</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt.</p>

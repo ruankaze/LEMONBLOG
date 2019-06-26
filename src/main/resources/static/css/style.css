@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,700);
-@import url(https://fonts.googleapis.com/css?family=Raleway:700,400,300);
+@import url(googleapisOne.css);
+@import url(googleapisTwo.css);
 body {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -240,6 +240,7 @@ padding: 17px 34px;}
 }
 .bg-image-1 {
 	background: url("../images/bg-image-1.jpg") 50% 0px no-repeat;
+	/*background: url("../images/banner.jpg") 50% 0px no-repeat;*/
 }
 .bg-image-2 {
 
@@ -958,7 +959,7 @@ margin: 2px 5px 0;}
 	left: 50%;
 	top: 50%;
 	font-size: 26px;
-	line-height: 1x;
+	line-height: 1px;
 	color: #2F2F2F;
 	margin-top: -8px;
 	margin-left: -8px;
