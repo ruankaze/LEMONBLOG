@@ -21,7 +21,7 @@ public class SeleniumJava {
         // 设置系统属性（1. 属性名 2. chrome 驱动路径）
         System.setProperty("webdriver.chrome.driver", "D:\\driver\\chromedriver.exe");
         // 创建浏览器对象
-        WebDriver driver= new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
         // 打开页面
         driver.get("https://www.baidu.cn");
         // 窗口最大化
