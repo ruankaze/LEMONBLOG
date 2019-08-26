@@ -36,5 +36,4 @@
         cursor: url('/images/nz.jpg'), default !important !*鼠标指针样式*!
     }
     */
-
 </style>

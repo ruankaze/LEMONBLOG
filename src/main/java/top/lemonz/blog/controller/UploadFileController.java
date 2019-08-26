@@ -63,7 +63,7 @@ public class UploadFileController {
                 Calendar ca = Calendar.getInstance();
                 // 拼接日期文件夹
                 String dateFile = (ca.get(Calendar.YEAR) + "/" + cl(ca.get(Calendar.MONTH) + 1) + "/" + cl(ca.get(Calendar.DATE)));
-                File dateDir = new File(filePath);
+                File dateDir = new File(filePath + dateFile);
 
                 //判断当前日期文件夹是否存在，不存在创建
                 if (!dateDir.exists()) {
