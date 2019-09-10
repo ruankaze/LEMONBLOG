@@ -34,7 +34,7 @@
                             <#list 1..5 as i>
                                 <li class="list-group-item" >
                                     <!-- 此A标签限制只能显示18字节 -->
-                                    <a href="javascript:;" class="btn" data-toggle="modal" >
+                                    <a href="javascript:;" class="btn" <#--data-toggle="modal"--> >
                                         正在努力发布中...
                                     </a>&nbsp;&nbsp;&nbsp;
                                     <span style="color:#8C8C8C;font-size: 12px;">06-14</span>
