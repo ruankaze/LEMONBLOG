@@ -43,7 +43,7 @@ public class ViewSkip {
     /**
      * 日志
      */
-    private final static Logger LOG = LoggerFactory.getLogger(ViewSkip.class);
+    private final static Logger log = LoggerFactory.getLogger(ViewSkip.class);
 
     /**
      * 存放视图地址
@@ -94,8 +94,8 @@ public class ViewSkip {
     private void viewModel(ModelMap modelMap) {
         modelMap.addAttribute("username", "小");
         modelMap.addAttribute("time", kit.ftime(System.currentTimeMillis()));
-        LOG.info(modelMap.get("username") + " - " + modelMap.get("time"));
-        LOG.info(kit.parseJackson(sud.queryAll(new SysUser()).get(0).getUserName()));
+        log.info(modelMap.get("username") + " - " + modelMap.get("time"));
+        log.info(kit.parseJackson(sud.queryAll(new SysUser()).get(0).getUserName()));
     }
 
 }

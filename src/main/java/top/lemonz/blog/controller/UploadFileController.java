@@ -42,7 +42,7 @@ public class UploadFileController {
     /**
      * 日志
      */
-    private final static Logger logger = LoggerFactory.getLogger(UploadFileController.class);
+    private final static Logger log = LoggerFactory.getLogger(UploadFileController.class);
 
     @RequestMapping("fileUpload")
     @ResponseBody
@@ -83,7 +83,7 @@ public class UploadFileController {
 
             } else {
 
-                logger.error("文件上传异常");
+                log.error("文件上传异常");
 
             }
 
