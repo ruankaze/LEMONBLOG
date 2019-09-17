@@ -1,0 +1,32 @@
+{
+  "author": {
+    "authorname": "林沢",
+    "description": "かわいい",
+    "links": {
+      "github": {
+        "title": "GitHub",
+        "url": "https://github.com/LOVELINESSLYT",
+        "class": "fa-github"
+      },
+      "csdn": {
+        "title": "CSDN",
+        "url": "https://blog.csdn.net/Hack_Different",
+        "class": "fa-crosshairs"
+      }
+    }
+  },
+  "one-two": [
+    {
+      "name1": "ningze1"
+    },
+    {
+      "name2": "ningze2"
+    },
+    {
+      "name3": "ningze3"
+    },
+    {
+      "name4": "ningze4"
+    }
+  ]
+}

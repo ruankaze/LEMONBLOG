@@ -47,9 +47,9 @@
                                     <!-- 此A标签限制只能显示18字节 -->
                                     <#list [[10, 65], [40, 35], [70, 5]] as le>
                                         <span style="position: absolute;left: ${le[0]}%;">
-                                            <a href="javascript:;" style="color: #7A67EE;" class="btn" data-toggle="modal">
+                                            <a href="javascript:;" style="color: #7A67EE;" class="btn">
                                                正在努力发布中...
-                                            </a> &nbsp;&nbsp;&nbsp;
+                                            </a>
                                             <span style="color: #8C8C8C; font-size: 12px;"> 06-14 </span>
                                         </span>
                                     </#list>

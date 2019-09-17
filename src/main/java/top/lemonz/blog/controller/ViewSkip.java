@@ -64,6 +64,9 @@ public class ViewSkip {
         // 测试视图页
         vsmap.put("test", "test");
 
+        // 信息查询
+        vsmap.put("findinfo", "interface/findInfo");
+
     }
 
     /**

@@ -33,6 +33,14 @@
         }
     });
 
+    $.ajax({
+        url: "/json/masterinfo.json",
+        dataType: "json",
+        success: function (result) {
+            console.log(result);
+        }
+    });
+
 </script>
 
 </html>

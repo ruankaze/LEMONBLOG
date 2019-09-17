@@ -10,8 +10,8 @@
 <link href="/css/sidebar.css" rel="stylesheet">
 
 <script type="text/javascript" id="hexo.configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {
+    let NexT = window.NexT || {};
+    let CONFIG = {
         sidebar: {
             "position": "left",
             "display": "post",
@@ -33,11 +33,10 @@
     <div class="sidebar-inner">
         <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
             <div class="site-overview">
-                <div class="site-author motion-element" itemprop="author" itemscope=""
-                     itemtype="http://schema.org/Person">
-                    <img class="site-author-image" itemprop="image" src="/images/nz.jpg" alt="柠泽">
-                    <p class="site-author-name" itemprop="name">柠泽</p>
-                    <p class="site-description motion-element" itemprop="description">专属</p>
+                <div class="site-author motion-element" itemprop="author" itemtype="http://schema.org/Person">
+                    <img class="site-author-image" itemprop="image" src="/images/nz.jpg" alt="林沢">
+                    <p class="site-author-name" itemprop="name">林沢</p>
+                    <p class="site-description motion-element" itemprop="description">かわいい</p>
                 </div>
                 <nav class="site-state motion-element">
                     <div class="site-state-item site-state-posts">
@@ -50,12 +49,14 @@
                 <div class="links-of-author motion-element">
                     <span class="links-of-author-item">
                         <a class="ah" href="https://github.com/LOVELINESSLYT" target="_blank" title="GitHub">
-                            <i class="fa fa-fw fa-github"></i>GitHub
+                            <i class="fa fa-fw fa-github"></i>
+                            <span>GitHub</span>
                         </a>
                     </span>
                     <span class="links-of-author-item">
                         <a class="ah" href="https://blog.csdn.net/Hack_Different" target="_blank" title="CSDN">
-                            <i class="fa fa-fw fa-crosshairs"></i>CSDN
+                            <i class="fa fa-fw fa-crosshairs"></i>
+                            <span>CSDN</span>
                         </a>
                     </span>
                 </div>

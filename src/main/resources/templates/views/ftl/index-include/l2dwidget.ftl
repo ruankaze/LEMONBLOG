@@ -15,8 +15,8 @@
 
 <script  type="text/javascript">
 
-    var modelNames = ['haruto', 'koharu'];
-    var name = modelNames[1];
+    let modelNames = ['haruto', 'koharu'];
+    let name = modelNames[1];
 
     L2Dwidget.init({
         pluginRootPath: "live2dw/", // 资源root路径

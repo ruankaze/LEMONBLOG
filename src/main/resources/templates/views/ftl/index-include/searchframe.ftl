@@ -24,7 +24,7 @@
                         <img style="width: 30px;height: 30px;opacity: 0.5;position:absolute;top: 80%;left: 93%;" src="/images/search.png" />
                     </a>
                     -->
-                    <div class="padding-top60 contact-form">
+                    <div class="padding-top60 contact-form" style="display: none !important;">
                         <input data-toggle="modal" data-target="#textSearch" data-wow-delay="1.0s" class="btn cta-button" style="border:1px #FFFFF0 solid;opacity: 0.5;background:rgba(0, 0, 0, 0);color: #ffffff;min-width: 85%;" placeholder="请输入关键词"/>
                     </div>
                 </div>
