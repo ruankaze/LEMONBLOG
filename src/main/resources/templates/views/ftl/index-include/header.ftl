@@ -57,7 +57,7 @@
                                     <ul class="nav navbar-nav navbar-right">
                                         <li class="active"><a href="#banner">主页</a></li>
                                         <li><a href="#services">服务</a></li>
-                                        <li><a href="#sort">分类</a></li>
+                                        <#--<li><a href="#sort">分类</a></li>-->
                                         <li><a href="#article">文章</a></li>
                                         <li><a href="#picture">图片</a></li>
                                         <li><a href="#contact">联系</a></li>

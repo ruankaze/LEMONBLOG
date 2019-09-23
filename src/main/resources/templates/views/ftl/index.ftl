@@ -45,10 +45,10 @@
     <#include "index-include/services.ftl">
 
     <!-- 引用分割 -->
-    <#include "index-include/segmentation.ftl">
+    <#-- <#include "index-include/segmentation.ftl"> -->
 
     <!-- 引用文章分类 -->
-    <#include "index-include/classify.ftl">
+    <#-- <#include "index-include/classify.ftl"> -->
 
     <!-- 引用顾客感言 -->
     <#include "index-include/clientsTestimonials.ftl">

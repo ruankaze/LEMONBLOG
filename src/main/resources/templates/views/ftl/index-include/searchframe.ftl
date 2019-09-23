@@ -14,8 +14,8 @@
         <div class="container">
             <div class="row">
                 <div class="caption-data" style="margin-top: 0px; opacity: 1;" data-animation-effect="fadeIn">
-                    <h1>开 始 你 的 IT 之 路</h1>
-                    <h3 class="padding-top30">Yes - Start, run and grow your business. Eos debitis prominus.</h3>
+                    <h1>神 の 世 界 へ よ う こ そ</h1>
+                    <h3 class="padding-top30">Yes - Start, Welcome to god's world.</h3>
                     <#--
                     <!-- 搜索框 &ndash;&gt;
                     <input id="textcontent" name="textcontent" style="width: 550px;height: 40px;border:1px #FFFFF0 solid;opacity: 0.5;background:rgba(0, 0, 0, 0);color: #ffffff;" type="text" class="form-control" placeholder="请输入关键词">
