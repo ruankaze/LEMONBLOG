@@ -1,10 +1,6 @@
 package top.lemonz.blog.controller;
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
-import org.apache.commons.io.FileUtils;
-import org.springframework.core.io.ClassPathResource;
 
-import java.io.*;
+import top.lemonz.blog.json.AuthorInfo;
 
 /**
  * Created by IntelliJ IDEA.
@@ -18,12 +14,10 @@ import java.io.*;
  */
 public class TestController {
 
-    public static void main(String[] args) throws IOException {
-        ClassPathResource resource = new ClassPathResource("static/json/masterinfo.json");
-        File filePath = resource.getFile();
-        String input = FileUtils.readFileToString(filePath, "UTF-8");
-        JSONObject jsonObject = JSON.parseObject(input);
-        System.err.println(jsonObject);
+    public static void main(String[] args) {
+
+        System.err.println(AuthorInfo.getAuthorInfo().getAuthorname());
+
     }
 
 }

@@ -2,18 +2,20 @@
   "author": {
     "authorname": "林沢",
     "description": "かわいい",
-    "links": {
-      "github": {
+    "links": [
+      {
+        "key": "github",
         "title": "GitHub",
         "url": "https://github.com/LOVELINESSLYT",
-        "class": "fa-github"
+        "lclass": "fa-github"
       },
-      "csdn": {
+      {
+        "key": "csdn",
         "title": "CSDN",
         "url": "https://blog.csdn.net/Hack_Different",
-        "class": "fa-crosshairs"
+        "lclass": "fa-crosshairs"
       }
-    }
+    ]
   },
   "one-two": [
     {
