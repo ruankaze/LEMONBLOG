@@ -31,7 +31,7 @@
                 <!-- portfolio items start -->
                 <div class="isotope-container row grid-space-20 nzpictures">
 
-                    <#list 1..12 as i>
+                    <#list 1..15 as i>
                         <!-- Item -->
                         <div class="col-sm-6 col-md-3 isotope-item">
                             <div class="image-box">
@@ -55,7 +55,7 @@
                                         <button type="button" class="close" data-dismiss="modal">
                                             <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
                                         </button>
-                                        <h4 class="modal-title" id="project-${i}-label">Project Title</h4>
+                                        <h4 class="modal-title" id="project-${i}-label">Title ${i}</h4>
                                     </div>
                                     <div class="modal-body">
                                         <div class="row">

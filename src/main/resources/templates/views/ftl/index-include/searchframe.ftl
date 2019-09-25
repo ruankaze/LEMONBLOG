@@ -9,7 +9,7 @@
 
 <!-- banner start -->
 <div id="banner" class="banner">
-    <div class="banner-image" style="background: url('/images/banner.jpg') no-repeat center;background-size: cover;"></div>
+    <div class="banner-image" style="background: url('/images/portfolio-14.jpg') no-repeat center;background-size: cover;"></div>
     <div class="banner-caption">
         <div class="container">
             <div class="row">

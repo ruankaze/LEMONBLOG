@@ -11,15 +11,15 @@ function collapseOneContent(obj) {
  * 图片推荐
  */
 function pictureRecommend() {
-    let webdesign = [1, 3, 6, 8, 9, 11];
+    let webdesign = [3, 6, 8, 9, 11, 15];
     selclass("web-design", webdesign);
-    let appdevelopment = [2, 5, 12];
+    let appdevelopment = [2, 5, 12, 14];
     selclass("app-development", appdevelopment);
-    let mobileapps = [4, 7, 10];
+    let mobileapps = [1, 4, 7, 10, 13];
     selclass("mobile-apps", mobileapps);
     function selclass(cname, arr) {
         for (let i = 0; i < arr.length; i++) {
-            $(".nzpictures .isotope-item").eq(arr[i]).addClass(cname);
+            $(".nzpictures .isotope-item").eq(arr[i]-1).addClass(cname);
         }
     }
 }
