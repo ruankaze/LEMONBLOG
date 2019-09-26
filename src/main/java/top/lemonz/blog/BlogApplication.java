@@ -15,9 +15,8 @@ import org.springframework.context.annotation.ComponentScan;
  * @version: 02.06
  * To change this template use File | Settings | File Templates.
  */
-@ComponentScan("top.lemonz")
-@MapperScan("top.lemonz.blog.dao")
 @SpringBootApplication
+@MapperScan("top.lemonz.blog.dao")
 public class BlogApplication {
 
     public static void main(String[] args) {

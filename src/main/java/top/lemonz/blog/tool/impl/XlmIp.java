@@ -26,6 +26,7 @@ import java.net.URL;
 public class XlmIp {
 
     private final static String IPURL = "https://tool.lu/ip/ajax.html";
+    private final static String IPURLS = "https://pv.sohu.com/cityjson?ie=utf-8";
 
     /**
      * log4j 日志

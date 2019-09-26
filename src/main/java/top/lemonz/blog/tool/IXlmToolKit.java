@@ -1,6 +1,7 @@
 package top.lemonz.blog.tool;
 
 import com.alibaba.fastjson.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
@@ -16,7 +17,6 @@ import java.util.Set;
  * @date 2018年6月10日 下午3:13:30
  * @versions 5.20
  */
-
 public interface IXlmToolKit {
 
 	/**

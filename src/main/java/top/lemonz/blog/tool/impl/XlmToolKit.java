@@ -7,7 +7,9 @@ import org.springframework.stereotype.Service;
 import top.lemonz.blog.tool.IXlmToolKit;
 
 import javax.servlet.http.HttpServletRequest;
-import java.io.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.text.ParseException;
@@ -15,13 +17,13 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
- * @author 小柠萌
- * @intro Xlm工具包
+ * @author xiao ning meng
+ * @intro Xlm tool
  * @path XlmQuery/cn.kaxlm6.publics.tool.impl.XlmToolKit
- * @date 2018年6月8日 下午2:52:32
+ * @date 2018/6/8/ 14:52:32
  * @versions 5.20
  */
-@Service("xlmToolKit")
+@Service("kit")
 public class XlmToolKit implements IXlmToolKit {
 
     /**
@@ -56,7 +58,7 @@ public class XlmToolKit implements IXlmToolKit {
                     if (nextInt == 0) {
                         nextInt = random.nextInt(10);
                         if (nextInt == 0) {
-                          continue;
+                            continue;
                         }
                     }
                     break;
@@ -126,15 +128,15 @@ public class XlmToolKit implements IXlmToolKit {
             return null;
         }
         try {
-            //定义一个空变量
+            // 定义一个空变量
             String fmtstr;
-            //判断传入进来的值是否有:符号>0 大于出入时间字符串格式
+            // 判断传入进来的值是否有:符号>0 大于出入时间字符串格式
             if (strdate.indexOf(":") > 0) {
                 fmtstr = "yyyy-MM-dd HH:mm:ss";
             } else {
                 fmtstr = "yyyy-MM-dd";
             }
-            //转为时间返回
+            // 转为时间返回
             SimpleDateFormat sdf = new SimpleDateFormat(fmtstr, Locale.UK);
             return sdf.parse(strdate);
         } catch (Exception e) {
