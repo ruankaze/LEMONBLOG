@@ -1,6 +1,7 @@
 {
-  "author": {
+  "authorInfo": {
     "authorname": "林沢",
+    "authorimg": "/images/nz.jpg",
     "description": "かわいい",
     "links": [
       {
@@ -16,19 +17,5 @@
         "lclass": "fa-crosshairs"
       }
     ]
-  },
-  "one-two": [
-    {
-      "name1": "ningze1"
-    },
-    {
-      "name2": "ningze2"
-    },
-    {
-      "name3": "ningze3"
-    },
-    {
-      "name4": "ningze4"
-    }
-  ]
+  }
 }

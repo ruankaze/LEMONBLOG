@@ -21,6 +21,8 @@ public class AuthorInfo {
 
     private String authorname;
 
+    private String authorimg;
+
     private String description;
 
     private List<Links> links;
@@ -31,6 +33,14 @@ public class AuthorInfo {
 
     public void setAuthorname(String authorname) {
         this.authorname = authorname;
+    }
+
+    public String getAuthorimg() {
+        return authorimg;
+    }
+
+    public void setAuthorimg(String authorimg) {
+        this.authorimg = authorimg;
     }
 
     public String getDescription() {
@@ -55,10 +65,10 @@ public class AuthorInfo {
      * @return
      */
     public static AuthorInfo getAuthorInfo() {
-        ClassPathResource resource = new ClassPathResource("static/json/masterinfo.json");
+        ClassPathResource resource = new ClassPathResource("/static/json/masterinfo.json");
         try {
             String input = FileUtils.readFileToString(resource.getFile(), "UTF-8");
-            return JSON.parseObject(input).getObject("author", AuthorInfo.class);
+            return JSON.parseObject(input).getObject("authorInfo", AuthorInfo.class);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -69,6 +79,7 @@ public class AuthorInfo {
     public String toString() {
         return "AuthorInfo{" +
                 "authorname='" + authorname + '\'' +
+                ", authorimg='" + authorimg + '\'' +
                 ", description='" + description + '\'' +
                 ", links=" + links +
                 '}';
