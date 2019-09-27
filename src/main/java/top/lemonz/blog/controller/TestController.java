@@ -1,7 +1,5 @@
 package top.lemonz.blog.controller;
 
-import top.lemonz.blog.json.AuthorInfo;
-
 /**
  * Created by IntelliJ IDEA.
  *
@@ -16,7 +14,7 @@ public class TestController {
 
     public static void main(String[] args) {
 
-        System.err.println(AuthorInfo.getAuthorInfo().getAuthorname());
+
 
     }
 

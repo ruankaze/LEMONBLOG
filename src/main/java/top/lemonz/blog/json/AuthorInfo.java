@@ -1,10 +1,5 @@
 package top.lemonz.blog.json;
 
-import com.alibaba.fastjson.JSON;
-import org.apache.commons.io.FileUtils;
-import org.springframework.core.io.ClassPathResource;
-
-import java.io.IOException;
 import java.util.List;
 
 /**
@@ -19,12 +14,24 @@ import java.util.List;
  */
 public class AuthorInfo {
 
+    /**
+     * 作者名称
+     */
     private String authorname;
 
+    /**
+     * 作者头像
+     */
     private String authorimg;
 
+    /**
+     * 作者介绍
+     */
     private String description;
 
+    /**
+     * 作者外链
+     */
     private List<Links> links;
 
     public String getAuthorname() {
@@ -59,22 +66,6 @@ public class AuthorInfo {
         this.links = links;
     }
 
-    /**
-     * get json file author info
-     *
-     * @return
-     */
-    public static AuthorInfo getAuthorInfo() {
-        ClassPathResource resource = new ClassPathResource("/static/json/masterinfo.json");
-        try {
-            String input = FileUtils.readFileToString(resource.getFile(), "UTF-8");
-            return JSON.parseObject(input).getObject("authorInfo", AuthorInfo.class);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
     @Override
     public String toString() {
         return "AuthorInfo{" +
@@ -87,12 +78,24 @@ public class AuthorInfo {
 
     public static class Links {
 
+        /**
+         * 外链键
+         */
         private String key;
 
+        /**
+         * 外链标题
+         */
         private String title;
 
+        /**
+         * 外链样式
+         */
         private String lclass;
 
+        /**
+         * 外链链接
+         */
         private String url;
 
         public String getKey() {

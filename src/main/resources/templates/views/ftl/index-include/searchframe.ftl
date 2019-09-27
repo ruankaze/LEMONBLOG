@@ -9,13 +9,13 @@
 
 <!-- banner start -->
 <div id="banner" class="banner">
-    <div class="banner-image" style="background: url('/images/portfolio-14.jpg') no-repeat center;background-size: cover;"></div>
+    <div class="banner-image" style="background: url('${Application.topGodInfo.godterritory}') no-repeat center;background-size: cover;"></div>
     <div class="banner-caption">
         <div class="container">
             <div class="row">
                 <div class="caption-data" style="margin-top: 0px; opacity: 1;" data-animation-effect="fadeIn">
-                    <h1>神 の 世 界 へ よ う こ そ</h1>
-                    <h3 class="padding-top30">Yes - Start, Welcome to god's world.</h3>
+                    <h1>${Application.topGodInfo.godwishcn}</h1>
+                    <h3 class="padding-top30">${Application.topGodInfo.godwishus}</h3>
                     <#--
                     <!-- 搜索框 &ndash;&gt;
                     <input id="textcontent" name="textcontent" style="width: 550px;height: 40px;border:1px #FFFFF0 solid;opacity: 0.5;background:rgba(0, 0, 0, 0);color: #ffffff;" type="text" class="form-control" placeholder="请输入关键词">

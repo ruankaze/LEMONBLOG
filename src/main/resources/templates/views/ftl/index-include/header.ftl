@@ -18,12 +18,12 @@
 
                     <!-- logo -->
                     <div class="logo smooth-scroll">
-                        <a href="#banner"><img id="logo" src="/images/logo1.png" alt="Worthy"></a>
+                        <a href="#banner"><img id="logo" src="${Application.topGodInfo.godimg}" alt="Worthy"></a>
                     </div>
 
                     <!-- name-and-slogan -->
                     <div class="logo-section smooth-scroll">
-                        <div class="brand"><a href="#banner">LEMON</a></div>
+                        <div class="brand"><a href="#banner">${Application.topGodInfo.godname}</a></div>
                     </div>
 
                 </div>

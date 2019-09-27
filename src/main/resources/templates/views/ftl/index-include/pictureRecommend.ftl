@@ -21,48 +21,48 @@
                 <div class="filters text-center">
                     <ul class="nav nav-pills">
                         <li class="active"><a href="#" data-filter="*">All</a></li>
-                        <li><a href="#" data-filter=".web-design">Web design</a></li>
-                        <li><a href="#" data-filter=".app-development">App development</a></li>
-                        <li><a href="#" data-filter=".mobile-apps">Mobile Apps</a></li>
+                        <#list Application.picrecInfo.picrecheads as phs>
+                            <li><a href="${phs.href}" data-filter="${phs.filter}">${phs.text}</a></li>
+                        </#list>
                     </ul>
                 </div>
                 <!-- isotope filters end -->
 
                 <!-- portfolio items start -->
-                <div class="isotope-container row grid-space-20 nzpictures">
+                <div class="isotope-container row grid-space-20">
 
-                    <#list 1..15 as i>
+                    <#list Application.picrecInfo.picrecinfos as pis>
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 isotope-item">
+                        <div class="col-sm-6 col-md-3 isotope-item ${pis.code}">
                             <div class="image-box">
                                 <div class="overlay-container">
-                                    <img src="/images/portfolio-${i}.jpg" alt="">
-                                    <a class="overlay" data-toggle="modal" data-target="#project-${i}">
+                                    <img src="/images/portfolio-${pis.key}.jpg" alt="">
+                                    <a class="overlay" data-toggle="modal" data-target="#project-${pis.key}">
                                         <i class="fa fa-search-plus"></i>
-                                        <span>Site Building</span>
+                                        <span>${pis.name} ${pis.key}</span>
                                     </a>
                                 </div>
-                                <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-${i}">Title ${i}</a>
+                                <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-${pis.key}">${pis.title} ${pis.key}</a>
                             </div>
                         </div>
                         <!-- Item end -->
 
                         <!-- Modal -->
-                        <div class="modal fade" id="project-${i}" tabindex="-1" role="dialog" aria-labelledby="project-${i}-label" aria-hidden="true">
+                        <div class="modal fade" id="project-${pis.key}" tabindex="-1" role="dialog" aria-labelledby="project-${pis.key}-label" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">
                                             <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
                                         </button>
-                                        <h4 class="modal-title" id="project-${i}-label">Title ${i}</h4>
+                                        <h4 class="modal-title" id="project-${pis.key}-label">${pis.modeltitle} ${pis.key}</h4>
                                     </div>
                                     <div class="modal-body">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <img src="/images/portfolio-${i}.jpg" alt="">
+                                                <img src="/images/portfolio-${pis.key}.jpg" alt="">
                                                 <br/>
-                                                <h3>Project Description</h3>
+                                                <h3>Project Description ${pis.key}</h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed,
                                                     quidem quis praesentium, ut unde. Quae sed, incidunt laudantium
                                                     nesciunt,
