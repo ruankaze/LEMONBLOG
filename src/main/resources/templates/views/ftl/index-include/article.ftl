@@ -18,7 +18,7 @@
         </div>
 
         <div class="row">
-            <#list ['最热下载', '最近更新', '推荐下载'] as li>
+            <#list ['推荐文章', '最近更新', '浏览最多'] as li>
                 <div class="col-sm-4">
                     <div class="panel panel-default text-center">
                         <div class="panel-body" style="height: 50px;">

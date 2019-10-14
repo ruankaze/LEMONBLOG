@@ -52,7 +52,14 @@ public class XlmFootInfo {
         JSONObject jsonMap = findWip();
 
         // 1. 获得浏览器名及版本号
-        String crBrowser = userAgent.getBrowser().getName() + " " + userAgent.getBrowserVersion().getVersion();
+        String crBrowser;
+        if (userAgent.toString().equals("MAC_OS_X_IPHONE-MOBILE_SAFARI")) {
+            crBrowser = userAgent.getBrowser().getName() + " " + "9.0以上";
+        } else if (userAgent.toString().equals("MAC_OS_X_IPHONE-APPLE_WEB_KIT")) {
+            crBrowser = userAgent.getBrowser().getName();
+        } else {
+            crBrowser = userAgent.getBrowser().getName() + " " + userAgent.getBrowserVersion().getVersion();
+        }
         // 2. 获得操作系统名
         String crOsname = userAgent.getOperatingSystem().getName();
         // 3. 获得操作系统版本号
@@ -64,7 +71,8 @@ public class XlmFootInfo {
         // 6. 获得地区编号
         String crAddnumber = jsonMap.getString("cid");
         // 7. 获得归属地及运营商
-        String crAddress = kit.getIpOperator(crWip);
+        // String crAddress = kit.getIpOperator(crWip);
+        String crAddress = jsonMap.getString("cname");
 
         map.put("crBrowser", crBrowser);
         map.put("crOsname", crOsname);

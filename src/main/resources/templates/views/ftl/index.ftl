@@ -33,7 +33,7 @@
     <#include "index-include/header.ftl">
 
     <!-- 引用搜索结果 -->
-    <#include "index-include/searchresult.ftl">
+    <#-- <#include "index-include/searchresult.ftl"> -->
 
     <!-- 引用搜索框 -->
     <#include "index-include/searchframe.ftl">

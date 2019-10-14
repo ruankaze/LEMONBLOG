@@ -17,6 +17,10 @@
 
     let modelNames = ['haruto', 'koharu'];
     let name = modelNames[1];
+    let isMobile = false; // 是否在手机显示
+    if (!isMobile) { // 手机不显示就隐藏div
+        document.getElementById("live2d-widget").style.display = "none";
+    }
 
     L2Dwidget.init({
         pluginRootPath: "live2dw/", // 资源root路径
@@ -38,7 +42,7 @@
             vOffset: 0 // bottom
         },
         mobile: {
-            show: 1 // 是否在手机显示
+            show: isMobile ? 1 : !1 // 是否在手机显示
         },
         log: !1
     });
