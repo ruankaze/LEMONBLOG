@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <p class="text-center" style="font-size: 15px;">Copyright &copy; 2018. Lemon Boy Company All rights reserved.</p>
+                <p class="text-center" style="font-size: 15px;">Copyright &copy; 2019. Lin Ze Company All rights reserved.</p>
             </div>
         </div>
     </div>

@@ -56,7 +56,7 @@
                                 <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
                                     <ul class="nav navbar-nav navbar-right">
                                         <li class="active"><a href="#banner">主页</a></li>
-                                        <li><a href="#services">服务</a></li>
+                                        <#--<li><a href="#acana">语录</a></li>-->
                                         <#--<li><a href="#sort">分类</a></li>-->
                                         <li><a href="#article">文章</a></li>
                                         <li><a href="#picture">图片</a></li>

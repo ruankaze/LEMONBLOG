@@ -41,8 +41,8 @@
     <!-- 引用祝语 -->
     <#include "index-include/bless.ftl">
 
-    <!-- 引用服务 -->
-    <#include "index-include/services.ftl">
+    <!-- 引用动漫语录 -->
+    <#-- <#include "index-include/acana.ftl"> -->
 
     <!-- 引用分割 -->
     <#-- <#include "index-include/segmentation.ftl"> -->
@@ -51,7 +51,7 @@
     <#-- <#include "index-include/classify.ftl"> -->
 
     <!-- 引用顾客感言 -->
-    <#include "index-include/clientsTestimonials.ftl">
+    <#-- <#include "index-include/clientsTestimonials.ftl"> -->
 
     <!-- 引用文章 -->
     <#include "index-include/article.ftl">

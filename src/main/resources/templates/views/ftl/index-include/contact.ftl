@@ -13,7 +13,7 @@
     <!-- .footer start -->
     <div class="footer section">
         <div class="container">
-            <h1 class="title text-center" id="contact">Contact Lemon</h1>
+            <h1 class="title text-center" id="contact">Contact Lin Ze</h1>
             <div class="space"></div>
             <div class="row">
 

@@ -14,14 +14,10 @@
         <div class="row " style="margin-top: 0px;">
             <div class="col-sm-12">
                 <h2>
-                    Together<strong>Lets Start</strong> - <span>BUSINESS</span> with
-                    future perspective.
+                    Together <strong>Lets Start</strong> - <span>HAUGHTY</span> Facing the World.
                 </h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Iure aperiam consequatur quo. Sed quis tortor magna. Maecenas
-                    hendrerit feugiat pulvinar. Aenean condimentum quam eu ultricies
-                    cursus. Nulla facilisi. In hac habitasse platea dictumst. Ut nec
-                    tellus neque. Sed non dui eget arcu elementum facilisis.</p>
+                <p>You are my one and only, I am one of you. [ the blazing angel of the end ]</p>
+                <p>你是我的唯一， 我是你的之一。 [ 终结的炽天使 ]</p>
             </div>
 
         </div>
