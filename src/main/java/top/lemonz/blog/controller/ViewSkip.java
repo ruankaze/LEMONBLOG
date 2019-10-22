@@ -56,6 +56,9 @@ public class ViewSkip {
         // 测试视图页
         vsmap.put("test", "test");
 
+        // 留言版
+        vsmap.put("guest", "guestbook");
+
         // 信息查询
         vsmap.put("findinfo", "interface/findInfo");
 
@@ -89,8 +92,6 @@ public class ViewSkip {
      * @param modelMap
      */
     private void viewModel(ModelMap modelMap) {
-
-
 
     }
 
