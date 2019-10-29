@@ -3,13 +3,6 @@
     text-align: left
 }
 
-@media screen and (max-width: 375px) {
-    .v {
-        font-size: 36px;
-        text-align: left
-    }
-}
-
 .v * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;

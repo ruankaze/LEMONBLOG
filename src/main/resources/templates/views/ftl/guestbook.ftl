@@ -9,14 +9,14 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/guestbook/valine.min.css">
 </head>
 <body>
 <div id="vcomments" class="v">
     <div class="vwrap">
         <div class="vedit">
-            <textarea id="veditor" class="veditor vinput"
-                      placeholder="Friends, please speak up, I am a fool."></textarea>
+            <textarea id="veditor" class="veditor vinput" placeholder="Friends, please speak up, I am a fool."></textarea>
             <div class="vinput vpreview" style="display:none;"></div>
         </div>
         <div class="vcontrol">
@@ -28,12 +28,11 @@
         <div style="display:none;" class="vmark"></div>
     </div>
     <div class="vinfo" style="display:block;">
-        <div class="vcount col"><span class="vnum">666</span> 评论</div>
+        <div class="vcount col"><span class="vnum">206</span> 评论</div>
     </div>
     <div class="vlist">
         <div class="vcard" id="5daebdf1ba39c80071abdf31">
-            <img class="vimg"
-                 src="https://gravatar.loli.net/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mp&amp;v=1.3.10">
+            <img class="vimg" src="/guestbook/head.png">
             <div class="vh" rootid="5daebdf1ba39c80071abdf31">
                 <div class="vhead">
                     <span class="vnick">Anonymous</span>
