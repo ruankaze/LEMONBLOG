@@ -9,6 +9,7 @@ import top.lemonz.blog.jpcap.NetUtil;
 
 import java.io.IOException;
 import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.*;
 
 /**
@@ -23,33 +24,15 @@ import java.util.*;
  */
 public class TestController {
 
-    // 重发间隔时间
+    /**
+     * 重发间隔时间
+     */
     public static Integer TIME = 1;
 
     /**
      * 输入
      */
     public static Scanner SCANNER = new Scanner(System.in);
-
-    /**
-     * 存储IP-Mac键值对
-     */
-    public static Map<String, String> IPANDMACS = new HashMap<>();
-
-    /**
-     * 网卡（必选项）
-     */
-    public static JpcapSender SENDER;
-
-    /**
-     * 网络段（必填项）
-     */
-    public static String NETSEGMENT = "192.168.9";
-
-    /**
-     * 本机网关（必填项）
-     */
-    public static String MYGATEWAY = "192.168.9.1";
 
     /**
      * 本机IP
@@ -62,9 +45,54 @@ public class TestController {
     public static String MYMAC;
 
     /**
+     * 本机IP对象
+     */
+    public static InetAddress MYIPOBJ;
+
+    /**
+     * 本机MAC数组
+     */
+    public static byte[] MYIPARR;
+
+    /**
+     * 网络段
+     */
+    public static String NETSEGMENT;
+
+    /**
+     * 网关IP
+     */
+    public static String GATEWAYIP;
+
+    /**
+     * 网关MAC
+     */
+    public static String GATEWAYMAC;
+
+    /**
+     * 网关IP对象
+     */
+    public static InetAddress GATEWAYIPOBJ;
+
+    /**
+     * 网关MAC数组
+     */
+    public static byte[] GATEWAYIPARR;
+
+    /**
+     * 存储IP-Mac键值对
+     */
+    public static Map<String, String> IPANDMACS = new HashMap<>();
+
+    /**
+     * 网卡（必选项）
+     */
+    public static JpcapSender SENDER;
+
+    /**
      * 是否初始化
      */
-    public static Boolean BL = false;
+    public static Boolean BL = true;
 
     /**
      * 初始化静态代码块
@@ -74,10 +102,24 @@ public class TestController {
             if (BL) {
                 // 扫描本机IP与MAC
                 Map<String, String> locaIpAndMac = NetUtil.findLocaIpAndMac();
-                // 存储本机IP
+                // 本机IP
                 MYIP = locaIpAndMac.get("ip");
-                // 存储本机MAC
+                // 本机IP对象
+                MYIPOBJ = InetAddress.getByName(MYIP);
+                // 本机MAC
                 MYMAC = locaIpAndMac.get("mac");
+                // 本机MAC数组
+                MYIPARR = NetUtil.stomac(MYMAC);
+                // 网络段
+                NETSEGMENT = MYIP.substring(0, MYIP.lastIndexOf("."));
+                // 网关IP
+                GATEWAYIP = NETSEGMENT + ".1";
+                // 网关IP对象
+                GATEWAYIPOBJ = InetAddress.getByName(GATEWAYIP);
+                // 网关MAC
+                GATEWAYMAC = NetUtil.getMacAddress(GATEWAYIPOBJ.getHostName());
+                // 网关MAC数组
+                GATEWAYIPARR = NetUtil.stomac(GATEWAYMAC);
                 // 扫描并存储网段下所有存活主机的IP与MAC
                 IPANDMACS = findAllMacAddress(NETSEGMENT);
                 // 选择并打开网卡
@@ -89,7 +131,6 @@ public class TestController {
     }
 
     public static void main(String[] args) throws Exception {
-
 
     }
 
@@ -152,7 +193,13 @@ public class TestController {
     /**
      * 转换Ip-Mac
      */
-    private static ARPPacket convertIpAndMac() {
+    private static ARPPacket convertIpAndMac(String tarip, String tarmac) throws UnknownHostException {
+
+        // 目标主机的IP对象与Mac数组
+        InetAddress targetIp = InetAddress.getByName(tarip);
+        byte[] targetMac = NetUtil.stomac(tarmac);
+
+
 
         return null;
     }

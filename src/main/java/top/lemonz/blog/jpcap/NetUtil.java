@@ -56,7 +56,7 @@ public class NetUtil {
     /**
      * mac地址转byte数组的方法
      */
-    private static byte[] stomac(String s) {
+    public static byte[] stomac(String s) {
         byte[] mac = new byte[]{(byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00};
         String[] s1 = s.split("-");
         for (int x = 0; x < s1.length; x++) {
