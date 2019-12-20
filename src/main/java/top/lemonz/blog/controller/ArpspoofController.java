@@ -27,7 +27,10 @@ public class ArpspoofController {
 
     public static void main(String[] args) throws Exception {
         // TODO Auto-generated method stub
+        Long l1 = System.currentTimeMillis();
         HashMap<String, String> map = new ArpspoofController().GetAllMacAddress();
+        Long l2 = System.currentTimeMillis();
+        System.err.println(((l2 - l1) / 1000) + " 秒.");
         for (Map.Entry keys: map.entrySet()) {
             System.err.println(keys.getKey() + "  " + keys.getValue());
         }
@@ -67,7 +70,6 @@ public class ArpspoofController {
         while (true) {
             for (Map.Entry<String, String> entry : map.entrySet()) {
                 String ip = entry.getKey();
-                System.err.println(ip);
                 /*
                  * JAVA字符串的比较  ==比较的是两个字符串的引用 涉及到class文件的二进制名称和类加载器
                  * equal的比较才是比较内容
@@ -220,20 +222,6 @@ public class ArpspoofController {
                     continue;
                 }
 
-                //// 判断响应信息是否是发给我的
-                boolean isTargetIP = false;
-                if (p.target_protoaddr[0] == device.addresses[1].address.getAddress()[0]
-                        && p.target_protoaddr[1] == device.addresses[1].address.getAddress()[1]
-                        && p.target_protoaddr[2] == device.addresses[1].address.getAddress()[2]
-                        && p.target_protoaddr[3] == device.addresses[1].address.getAddress()[3]) {
-                    isTargetIP = true;
-                }
-
-                if (!isTargetIP) {
-                    System.out.println("非响应本机ARP");
-                    continue;
-                }
-
                 //// 将byte[]数组解析为标志IP地址
                 StringBuilder str = new StringBuilder();
                 for (byte part : p.sender_protoaddr) {
@@ -280,7 +268,6 @@ public class ArpspoofController {
 
                     String mac = str.toString().substring(0, 17);
                     System.out.println("当前扫描存活主机MAC地址：" + mac);
-                    Thread.sleep(3000);
                     map.put(ip, mac);
                 } else {
                     System.out.println("当前扫描IP记录已存在，进入下一轮");
@@ -292,8 +279,6 @@ public class ArpspoofController {
                 }
 
                 System.out.println("本轮结束，当前map保存对象个数:" + map.size());
-                System.out.println("");
-                Thread.sleep(4000);
             }
         }
     }
