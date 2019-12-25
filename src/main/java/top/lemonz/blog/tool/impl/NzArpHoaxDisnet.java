@@ -9,7 +9,6 @@ import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.io.ClassPathResource;
-import top.lemonz.blog.controller.TestController;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -43,7 +42,7 @@ public class NzArpHoaxDisnet {
     /**
      * 日志
      */
-    private final static Logger log = LoggerFactory.getLogger(TestController.class);
+    private final static Logger log = LoggerFactory.getLogger(NzArpHoaxDisnet.class);
 
     /**
      * 重发间隔时间
