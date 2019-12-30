@@ -1,0 +1,6 @@
+#searchvals {
+    border-radius: 10px;border:1px #FFFFF0 solid;opacity: 0.5;background:rgba(0, 0, 0, 0);color: #ffffff;min-width: 70%;text-transform: initial;
+}
+#searchvals::-webkit-input-placeholder {
+    color: #FFFFFF;
+}

@@ -41,7 +41,7 @@
                 <nav class="site-state motion-element">
                     <div class="site-state-item site-state-posts">
                         <a class="ah" href="/archives">
-                            <span class="site-state-item-count">5</span>
+                            <span class="site-state-item-count fa-crosshairs">5</span>
                             <span class="site-state-item-name">日志</span>
                         </a>
                     </div>

@@ -4,6 +4,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import top.lemonz.blog.json.AuthorInfo;
 import top.lemonz.blog.json.JsonFileOption;
 import top.lemonz.blog.json.PicRecInfo;
@@ -27,6 +30,8 @@ import java.util.Comparator;
  * To change this template use File | Settings | File Templates.
  */
 @Configuration
+@Controller
+@RequestMapping("init")
 public class InitializationConfig implements Serializable {
 
     private final static Logger log = LoggerFactory.getLogger(InitializationConfig.class);
@@ -59,7 +64,9 @@ public class InitializationConfig implements Serializable {
     public static TopGodInfo topGodInfo;
 
     @PostConstruct
-    public void init() {
+    @RequestMapping("info")
+    @ResponseBody
+    public String init() {
 
         log.info("--- 正在初始化数据 ---");
         long l1 = System.currentTimeMillis();
@@ -76,6 +83,8 @@ public class InitializationConfig implements Serializable {
 
         long l2 = System.currentTimeMillis();
         log.info("--- 初始化数据完成 --- 耗时：" + (l2 - l1) + " ms");
+
+        return "200";
 
     }
 

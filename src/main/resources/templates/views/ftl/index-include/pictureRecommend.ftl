@@ -37,52 +37,15 @@
                             <div class="image-box">
                                 <div class="overlay-container">
                                     <img src="/images/portfolio-${pis.key}.jpg" alt="">
-                                    <a class="overlay" data-toggle="modal" data-target="#project-${pis.key}">
+                                    <a href="/images/portfolio-${pis.key}.jpg" download="${pis.key}" class="overlay" data-target="#project-${pis.key}">
                                         <i class="fa fa-search-plus"></i>
                                         <span>${pis.name} ${pis.key}</span>
                                     </a>
                                 </div>
-                                <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-${pis.key}">${pis.title} ${pis.key}</a>
+                                <a class="btn btn-default btn-block" data-target="#project-${pis.key}">${pis.title} ${pis.key}</a>
                             </div>
                         </div>
                         <!-- Item end -->
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="project-${pis.key}" tabindex="-1" role="dialog" aria-labelledby="project-${pis.key}-label" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">
-                                            <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
-                                        </button>
-                                        <h4 class="modal-title" id="project-${pis.key}-label">${pis.modeltitle} ${pis.key}</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <img src="/images/portfolio-${pis.key}.jpg" alt="">
-                                                <br/>
-                                                <h3>Project Description ${pis.key}</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed,
-                                                    quidem quis praesentium, ut unde. Quae sed, incidunt laudantium
-                                                    nesciunt,
-                                                    optio corporis quod earum pariatur omnis illo saepe numquam
-                                                    suscipit,
-                                                    nemo placeat dignissimos eius mollitia et quas officia doloremque
-                                                    ipsum labore rem deserunt.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">
-                                            Close
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal end -->
                     </#list>
 
                 </div>

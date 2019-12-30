@@ -13,7 +13,19 @@
       "key": "csdn",
       "title": "CSDN",
       "url": "https://blog.csdn.net/Hack_Different",
-      "lclass": "fa-crosshairs"
+      "lclass": "fa-copyright"
+    },
+    {
+      "key": "cnblogs",
+      "title": "CnBlogs",
+      "url": "https://www.cnblogs.com/linzes/",
+      "lclass": "fa-rss"
+    },
+    {
+      "key": "linze",
+      "title": "LinZe",
+      "url": "http://blog.kaxlm6.cn",
+      "lclass": "fa-leaf"
     }
   ]
 }

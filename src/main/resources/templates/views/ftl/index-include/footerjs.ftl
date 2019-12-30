@@ -28,3 +28,6 @@
 
 <!-- 动态背景 -->
 <script type="text/javascript" src="/js/canvas-nest.min.js"></script>
+
+<!-- 自定义JS --->
+<script type="text/javascript" src="/js/nz.js"></script>

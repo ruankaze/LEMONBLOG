@@ -16,16 +16,16 @@
                 <div class="caption-data" style="margin-top: 0px; opacity: 1;" data-animation-effect="fadeIn">
                     <h1>${Application.topGodInfo.godwishcn}</h1>
                     <h3 class="padding-top30">${Application.topGodInfo.godwishus}</h3>
-                    <#--
-                    <!-- 搜索框 &ndash;&gt;
+                    <!--
+                    <#-- 搜索框 -->
                     <input id="textcontent" name="textcontent" style="width: 550px;height: 40px;border:1px #FFFFF0 solid;opacity: 0.5;background:rgba(0, 0, 0, 0);color: #ffffff;" type="text" class="form-control" placeholder="请输入关键词">
-                    <!-- 搜索按钮 &ndash;&gt;
+                    <#-- 搜索按钮 -->
                     <a data-toggle="modal" data-target="#textSearch" data-wow-delay="1.0s">
                         <img style="width: 30px;height: 30px;opacity: 0.5;position:absolute;top: 80%;left: 93%;" src="/images/search.png" />
                     </a>
                     -->
-                    <div class="padding-top60 contact-form" style="display: none !important;">
-                        <input data-toggle="modal" data-target="#textSearch" data-wow-delay="1.0s" class="btn cta-button" style="border:1px #FFFFF0 solid;opacity: 0.5;background:rgba(0, 0, 0, 0);color: #ffffff;min-width: 85%;" placeholder="请输入关键词"/>
+                    <div class="padding-top60 contact-form" style="display: block !important;" onclick="javascript: $.ajax('/init/info');">
+                        <input id="searchvals" placeholder="Please Enter Keywords" value="Infinite Proximity To Death . . . . . . . " class="btn cta-button" data-toggle="modal" data-target="#textSearch" data-wow-delay="1.0s"/>
                     </div>
                 </div>
             </div>

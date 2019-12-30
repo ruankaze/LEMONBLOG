@@ -616,6 +616,12 @@
 .fa-github:before {
   content: "\f09b";
 }
+.fa-snowflake:before {
+    content: "\f36b";
+}
+.fa-free-code-camp:before {
+    content: "\f2c5";
+}
 .fa-unlock:before {
   content: "\f09c";
 }
