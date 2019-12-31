@@ -1,6 +1,63 @@
+/*隐藏X轴*/
+body {
+    /*overflow-x: hidden;*/
+}
+/*canvas漂浮, 设置级别*/
+#c_n13 {
+    position: absolute !important;
+    z-index: 1 !important;
+    width: -webkit-fill-available !important;
+}
+
+/*顶部导航自适应*/
+.navbar-fixed-top {
+    padding-top: 15px !important;padding-right: inherit !important;
+}
+
 #searchvals {
-    border-radius: 10px;border:1px #FFFFF0 solid;opacity: 0.5;background:rgba(0, 0, 0, 0);color: #ffffff;min-width: 70%;text-transform: initial;
+    border-radius: 10px;/*border:1px #FFFFF0 solid;*/opacity: 0.5;background:rgba(0, 0, 0, 0);color: #ffffff;min-width: 70%;text-transform: initial;
 }
 #searchvals::-webkit-input-placeholder {
     color: #FFFFFF;
+}
+#searchvals:focus {
+    box-shadow: 0 0 10px #ffffff;outline: none;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar{
+    width: 5px;height: 5px;background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    /*灰色渐变*/
+    background-color: #AAA;
+    background-image:
+            -webkit-linear-gradient(
+                    90deg,
+                    rgba(0, 0, 0, .2) 25%,
+                    transparent 25%,
+                    transparent 50%,
+                    rgba(0, 0, 0, .2) 50%,
+                    rgba(0, 0, 0, .2) 75%,
+                    transparent 75%
+            );
+    /*蓝色渐变*/
+    /*background-image:
+            -webkit-gradient(
+                    linear,
+                    left bottom,
+                    left top,
+                    color-stop(0.44, rgb(122,153,217)),
+                    color-stop(0.72, rgb(73,125,189)),
+                    !*color-stop(0.86, rgb(28,58,148)),*!
+                    color-stop(0.44, rgb(122,153,217))
+            );*/
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+    border-radius: 10px;box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);background-color: #F5F5F5;
 }

@@ -27,7 +27,10 @@
     <#include "index-include/topLoadingStrip.ftl">
 
 </head>
-<body class="no-trans">
+<body class="no-trans splat-toggle">
+
+    <!-- 雨特效 -->
+    <#include "index-include/raineffects.ftl">
 
     <!-- 引用头部 -->
     <#include "index-include/header.ftl">
