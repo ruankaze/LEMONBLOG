@@ -25,7 +25,7 @@
                     </a>
                     -->
                     <div class="padding-top60 contact-form" style="display: block !important;" onclick="javascript: $.ajax('/init/info');">
-                        <input id="searchvals" placeholder="Please Enter Keywords" value="Infinite Proximity To Death . . . . . . . " class="btn cta-button" data-toggle="modal" data-target="#textSearch" data-wow-delay="1.0s"/>
+                        <input id="searchvals" placeholder="Find The Way To Death" class="btn cta-button" data-toggle="modal" data-target="#textSearch" data-wow-delay="1.0s"/>
                     </div>
                 </div>
             </div>

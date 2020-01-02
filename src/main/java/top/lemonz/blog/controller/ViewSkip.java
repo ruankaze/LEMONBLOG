@@ -59,9 +59,6 @@ public class ViewSkip {
         // 留言版
         vsmap.put("guest", "guestbook");
 
-        // 下雨效果
-        vsmap.put("rain", "rain");
-
         // time
         vsmap.put("time", "time");
 

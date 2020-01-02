@@ -21,7 +21,7 @@
 <script type="text/javascript" src="/js/customIndex.js"></script>
 
 <!-- vue -->
-<script type="text/javascript" src="/js/vue.js"></script>
+<#--<script type="text/javascript" src="/js/vue.js"></script>-->
 
 <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/love.js"></script>

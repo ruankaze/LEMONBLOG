@@ -3,7 +3,7 @@ body {
     /*overflow-x: hidden;*/
 }
 /*canvas漂浮, 设置级别*/
-#c_n13 {
+#c_n666 {
     position: absolute !important;
     z-index: 1 !important;
     width: -webkit-fill-available !important;
@@ -21,7 +21,8 @@ body {
     color: #FFFFFF;
 }
 #searchvals:focus {
-    box-shadow: 0 0 10px #ffffff;outline: none;
+    /*box-shadow: 0 0 10px #ffffff;outline: none;*/
+    box-shadow: 0 0 0px #ffffff;outline: none;
 }
 
 /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
