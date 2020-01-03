@@ -9,6 +9,26 @@
 
 <link href="/css/sidebar.css" rel="stylesheet">
 
+<style>
+    .links-of-author a {
+        font-size: 12px !important;
+    }
+    .godnotitles {
+        cursor: default;
+        font-size: 12px;
+        background-color: #000;
+    }
+    .godnotitles:nth-child(1) {
+        color: #f7ec90;
+    }
+    .godnotitles:nth-child(2) {
+
+    }
+    .godnotitlesubs {
+        margin-top: 10px; margin-bottom: 5px;
+    }
+</style>
+
 <script type="text/javascript" id="hexo.configurations">
     let NexT = window.NexT || {};
     let CONFIG = {
@@ -38,15 +58,9 @@
                     <p class="site-author-name" itemprop="name">${Application.authorInfo.authorname}</p>
                     <p class="site-description motion-element" itemprop="description">${Application.authorInfo.description}</p>
                 </div>
-                <nav class="site-state motion-element">
-                    <div class="site-state-item site-state-posts">
-                        <a class="ah" href="/archives">
-                            <span class="site-state-item-count fa-crosshairs">5</span>
-                            <span class="site-state-item-name">日志</span>
-                        </a>
-                    </div>
-                </nav>
                 <div class="links-of-author motion-element">
+                    <div class="godnotitles">> 王の后翼</div>
+                    <div class="godnotitlesubs">
                     <#list Application.authorInfo.links as link >
                         <span class="links-of-author-item">
                             <a class="ah" href="${link.url}" target="_blank" title="${link.title}">
@@ -55,6 +69,25 @@
                             </a>
                         </span>
                     </#list>
+                    </div>
+                    <div class="godnotitles">> 王の痕迹</div>
+                    <div class="godnotitlesubs">
+                        <div class="links-of-author-item">
+                            <a class="ah" href="" target="_blank" title="">
+                                <span title="PICTURE">图片</span>
+                            </a>
+                        </div>
+                        <div class="links-of-author-item">
+                            <a class="ah" href="" target="_blank" title="">
+                                <span title="ARTICLE">文章</span>
+                            </a>
+                        </div>
+                        <div class="links-of-author-item">
+                            <a class="ah" href="" target="_blank" title="">
+                                <span title="ABOUT">关于</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

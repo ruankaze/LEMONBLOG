@@ -8,7 +8,7 @@
 -->
 
 <!-- 底部.subfooter start -->
-<div class="subfooter">
+<div class="subfooter" style="/*position: absolute;margin-top: -40px;text-align: center;width: 100%;background-color: #ffffff00 !important;padding: 0px 0 !important;*/">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

@@ -27,52 +27,22 @@
     <#include "index-include/topLoadingStrip.ftl">
 
 </head>
-<body class="no-trans">
-
-    <!-- 雨特效 - 有点卡（暂不考虑） -->
-    <#-- <#include "index-include/raineffects.ftl"> -->
-
-    <!-- 引用头部 -->
-    <#include "index-include/header.ftl">
-
-    <!-- 引用搜索结果 -->
-    <#-- <#include "index-include/searchresult.ftl"> -->
+<body>
 
     <!-- 引用搜索框 -->
     <#include "index-include/searchframe.ftl">
 
-    <!-- 引用祝语 -->
-    <#include "index-include/bless.ftl">
+    <!-- Custom Scripts -->
+    <script type="text/javascript" src="/js/jquery-3.3.1.js"></script>
 
-    <!-- 引用动漫语录 -->
-    <#-- <#include "index-include/acana.ftl"> -->
+    <!-- 页面点击小红心 -->
+    <script type="text/javascript" src="/js/love.js"></script>
 
-    <!-- 引用分割 -->
-    <#-- <#include "index-include/segmentation.ftl"> -->
+    <!-- 动态背景 -->
+    <script type="text/javascript" src="/js/canvas-nest.min.js"></script>
 
-    <!-- 引用文章分类 -->
-    <#-- <#include "index-include/classify.ftl"> -->
-
-    <!-- 引用顾客感言 -->
-    <#-- <#include "index-include/clientsTestimonials.ftl"> -->
-
-    <!-- 引用文章 -->
-    <#include "index-include/article.ftl">
-
-    <!-- 引用分割 -->
-    <#include "index-include/segmentation.ftl">
-
-    <!-- 引用图片推荐 -->
-    <#include "index-include/pictureRecommend.ftl">
-
-    <!-- 引用联系 -->
-    <#include "index-include/contact.ftl">
-
-    <!-- 引用底部 -->
-    <#include "index-include/subfooter.ftl">
-
-    <!-- 引用js -->
-    <#include "index-include/footerjs.ftl">
+    <!-- 自定义JS --->
+    <script type="text/javascript" src="/js/nz.js"></script>
 
     <!-- 引用模型 -->
     <#include "index-include/l2dwidget.ftl">

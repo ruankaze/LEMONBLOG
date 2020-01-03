@@ -16,7 +16,7 @@
                 <h2>
                     Together <strong>Lets Start</strong> - <span>HAUGHTY</span> Facing the World.
                 </h2>
-                <p>You are my one and only, I am one of you. [ the blazing angel of the end ]</p>
+                <p>You are my one and only, I am one of you. [ Seraph of the End ]</p>
                 <p>你是我的唯一， 我是你的之一。 [ 终结的炽天使 ]</p>
             </div>
 
