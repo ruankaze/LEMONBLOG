@@ -32,17 +32,17 @@
     <!-- 引用搜索框 -->
     <#include "index-include/searchframe.ftl">
 
-    <!-- Custom Scripts -->
-    <script type="text/javascript" src="/js/jquery-3.3.1.js"></script>
+    <!-- 引用动漫语录 -->
+    <#include "index-include/acana.ftl">
 
-    <!-- 页面点击小红心 -->
-    <script type="text/javascript" src="/js/love.js"></script>
+    <!-- 引用联系 -->
+    <#include "index-include/contact.ftl">
 
-    <!-- 动态背景 -->
-    <script type="text/javascript" src="/js/canvas-nest.min.js"></script>
+    <!-- 引用底部 -->
+    <#include "index-include/subfooter.ftl">
 
-    <!-- 自定义JS --->
-    <script type="text/javascript" src="/js/nz.js"></script>
+    <!-- 引用js -->
+    <#include "index-include/footerjs.ftl">
 
     <!-- 引用模型 -->
     <#include "index-include/l2dwidget.ftl">

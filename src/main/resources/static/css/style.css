@@ -1,7 +1,8 @@
 @import url(googleapisOne.css);
 @import url(googleapisTwo.css);
 body {
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'SimSun', sans-serif;
 }
 .brand {
 	font-family: 'Raleway', sans-serif;

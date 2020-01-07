@@ -8,9 +8,19 @@
 -->
 
 <!-- section start -->
-<section class="section transprant-bg pclear secPadding">
+<section id="acana" class="section transprant-bg pclear secPadding acana">
     <div class="container no-view" data-animation-effect="fadeIn">
-        <h1 id="acana" class="title text-center">AC Ana</h1>
+        <h1 class="title text-center">AC Ana</h1>
+        <div class="acmsgs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>You are my one and only , I am one of you . [ Seraph of the End ]</p>
+                        <p>你是我的唯一，我是你的之一。 [ 终结的炽天使 ]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="space"></div>
         <div class="row">
             <div class="col-md-4">
@@ -22,7 +32,6 @@
                         <h3 class="media-heading">User Research</h3>
                         <blockquote>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam consequatur quo.</p>
-
                         </blockquote>
                     </div>
                 </div>

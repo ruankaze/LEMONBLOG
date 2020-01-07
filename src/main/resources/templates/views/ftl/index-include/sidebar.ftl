@@ -14,18 +14,19 @@
         font-size: 12px !important;
     }
     .godnotitles {
-        cursor: default;
-        font-size: 12px;
-        background-color: #000;
+        cursor: default;font-size: 12px;background-color: #000;
     }
     .godnotitles:nth-child(1) {
-        color: #f7ec90;
+        color: #f3e88d;
     }
-    .godnotitles:nth-child(2) {
-
+    .godnotitles:nth-child(3) {
+        color: #f3918f;
     }
     .godnotitlesubs {
         margin-top: 10px; margin-bottom: 5px;
+    }
+    .sidebar-inner {
+        padding: 45px 35px !important;
     }
 </style>
 
@@ -59,32 +60,49 @@
                     <p class="site-description motion-element" itemprop="description">${Application.authorInfo.description}</p>
                 </div>
                 <div class="links-of-author motion-element">
-                    <div class="godnotitles">> 王の后翼</div>
+                    <div class="godnotitles">ଓ 王の后翼</div>
                     <div class="godnotitlesubs">
                     <#list Application.authorInfo.links as link >
                         <span class="links-of-author-item">
                             <a class="ah" href="${link.url}" target="_blank" title="${link.title}">
                                 <i class="fa fa-fw ${link.lclass}"></i>
-                                <span>${link.title}</span>
+                                <span>${link.key}</span>
                             </a>
                         </span>
                     </#list>
                     </div>
-                    <div class="godnotitles">> 王の痕迹</div>
+                    <div class="godnotitles">ミ 王の痕迹</div>
                     <div class="godnotitlesubs">
                         <div class="links-of-author-item">
-                            <a class="ah" href="" target="_blank" title="">
-                                <span title="PICTURE">图片</span>
+                            <a class="ah" href="#banner" title="首页">
+                                <span>Index</span>
+                            </a>
+                        </div>
+                        <#--
+                        <div class="links-of-author-item">
+                            <a class="ah" href="#picture" title="图片">
+                                <span>Picture</span>
                             </a>
                         </div>
                         <div class="links-of-author-item">
-                            <a class="ah" href="" target="_blank" title="">
-                                <span title="ARTICLE">文章</span>
+                            <a class="ah" href="#article" title="文章">
+                                <span>Article</span>
+                            </a>
+                        </div>
+                        -->
+                        <div class="links-of-author-item">
+                            <a class="ah" href="#acana" title="语录">
+                                <span>Acana</span>
                             </a>
                         </div>
                         <div class="links-of-author-item">
-                            <a class="ah" href="" target="_blank" title="">
-                                <span title="ABOUT">关于</span>
+                            <a class="ah" href="#contact" title="联系">
+                                <span>Contact</span>
+                            </a>
+                        </div>
+                        <div class="links-of-author-item">
+                            <a class="ah" href="#about" title="关于">
+                                <span>About</span>
                             </a>
                         </div>
                     </div>

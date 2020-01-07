@@ -4,26 +4,26 @@
   "description": "かわいい",
   "links": [
     {
-      "key": "github",
+      "key": "GitHub",
       "title": "GitHub",
       "url": "https://github.com/LOVELINESSLYT",
       "lclass": "fa-github"
     },
     {
-      "key": "csdn",
+      "key": "CSDN",
       "title": "CSDN",
       "url": "https://blog.csdn.net/Hack_Different",
       "lclass": "fa-copyright"
     },
     {
-      "key": "cnblogs",
-      "title": "CnBlogs",
+      "key": "CnBlogs",
+      "title": "博客园",
       "url": "https://www.cnblogs.com/linzes/",
       "lclass": "fa-rss"
     },
     {
-      "key": "linze",
-      "title": "LinZe",
+      "key": "LinZe",
+      "title": "林沢の博客",
       "url": "http://blog.kaxlm6.cn",
       "lclass": "fa-leaf"
     }
