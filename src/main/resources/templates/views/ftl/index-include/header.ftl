@@ -55,13 +55,13 @@
                                 <!-- Collect the nav links, forms, and other content for toggling -->
                                 <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
                                     <ul class="nav navbar-nav navbar-right">
-                                        <li class="active"><a href="#banner">INDEX</a></li>
-                                        <#--<li><a href="#acana">语录</a></li>-->
+                                        <li class="active"><a href="#banner" title="主页">Index</a></li>
+                                        <li><a href="#acana" title="语录">Acana</a></li>
                                         <#--<li><a href="#sort">分类</a></li>-->
                                         <#--<li><a href="#article">文章</a></li>-->
-                                        <li><a href="#picture">PICTURE</a></li>
-                                        <#--<li><a href="#contact">联系</a></li>-->
-                                        <#--<li><a href="#about">关于</a></li>-->
+                                        <#--<li><a href="#picture">PICTURE</a></li>-->
+                                        <li><a href="#contact" title="联系">Contact</a></li>
+                                        <li><a href="#about" title="关于">About</a></li>
                                     </ul>
                                 </div>
 

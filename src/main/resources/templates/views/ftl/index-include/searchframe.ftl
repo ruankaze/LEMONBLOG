@@ -13,7 +13,7 @@
     <div class="banner-caption">
         <div class="container">
             <div class="row">
-                <div class="caption-data" style="margin-top: 0px; opacity: 1;" data-animation-effect="fadeIn">
+                <div class="caption-data" style="margin-top: 0px;cursor: default;" data-animation-effect="fadeIn">
                     <h1>${Application.topGodInfo.godwishcn}</h1>
                     <h3 class="padding-top30">${Application.topGodInfo.godwishus}</h3>
                     <!--
