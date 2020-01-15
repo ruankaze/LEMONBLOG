@@ -91,16 +91,23 @@ body {
 }
 
 .acana .acnames .col-md-4 .media .media-left img {
-    /*min-width: 95px;min-height: 95px;*/
-    min-width: 95px;max-height: 177px;max-width: initial;
+    /*min-width: 95px;max-height: 177px;*/
+    width: 127px;height: 177px;
+    max-width: initial;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    border-image: linear-gradient(#F44336, #03A9F4) 20 20;
+    background-image: -webkit-linear-gradient(top, #F44336 40%, #03A9F4 50%);
+    box-shadow: 3px 3px 8px #03A9F4, -3px -3px 8px #F44336;
+    padding: 1px;
 }
 
 .acana .acnames .col-md-4 {
-    margin-top: 25px;height: 32%;
+    margin-top: 25px;height: 30%;
 }
 
 .acana .acnames {
-    overflow: auto;height: 655px;
+    overflow: auto;height: 690px;margin-top: -25px;
 }
 
 .acana .acintros p {
@@ -123,6 +130,10 @@ body {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.52);
     content: "";
+}
+
+.acnames::-webkit-scrollbar {
+    width: 3px;
 }
 
 /*动漫语录标签 stop*/
