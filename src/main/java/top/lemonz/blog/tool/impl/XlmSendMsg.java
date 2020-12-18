@@ -18,7 +18,7 @@ import java.util.Map;
  * @author NingZe
  * description: 短信发送
  * path: DecoSearch-manage-com.rerise.tool.impl-XlmSendMsg
- * date: 2019/7/12 0012 13:19
+ * date: 2020/12/18 0012 13:19
  * version: 02.06
  * To change this template use File | Settings | File Templates.
  *//*
