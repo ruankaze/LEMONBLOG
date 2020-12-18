@@ -27,12 +27,12 @@ public class XlmSendMsg {
     *//**
      * 产品名称:云通信短信API产品,开发者无需替换
      *//*
-    private static final String product = "Dysmsapi";
+    private static final String product = "";
 
     *//**
      * 产品域名,开发者无需替换
      *//*
-    private static final String domain = "dysmsapi.aliyuncs.com";
+    private static final String domain = "";
 
     *//**
      * TODO 此处需要替换成开发者自己的AK(在阿里云访问控制台寻找)
@@ -49,10 +49,10 @@ public class XlmSendMsg {
     *//**
      * 初始化acsClient,暂不支持region化
      *//*
-    private static IClientProfile profile = DefaultProfile.getProfile("cn-hangzhou", accessKeyId, accessKeySecret);
+    private static IClientProfile profile = DefaultProfile.getProfile("", accessKeyId, accessKeySecret);
     static {
         try {
-            DefaultProfile.addEndpoint("cn", "cn", product, domain);
+            DefaultProfile.addEndpoint("", "", product, domain);
         } catch (ClientException e) {
             e.printStackTrace();
         }
